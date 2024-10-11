@@ -100,7 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FallSpeed: 1.4
-  bottomBoundary: -5.3
+  bottomBoundary: -2.6
+  scoreValue: 1
 --- !u!61 &5363046582421327693
 BoxCollider2D:
   m_ObjectHideFlags: 0

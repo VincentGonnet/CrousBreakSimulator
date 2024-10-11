@@ -41,7 +41,7 @@ public class ObjectManager : MonoBehaviour
 
         // Generate random position within these dimensions
         float randomX = Random.Range(0, width);
-        float randomY = Random.Range(0, height);
+        float randomY = 1000f;//Random.Range(0, height);
 
         // Find the bottom-left corner of the RectTransform
         Vector3 bottomLeftCorner = worldCorners[0];
