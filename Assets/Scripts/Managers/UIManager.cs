@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private ObjectManager objectManager;
     [SerializeField] private RectTransform handleRect;
+    [SerializeField] private PointsCounter scoreText;
 
     private void Awake()
     {
@@ -44,5 +46,8 @@ public class UIManager : MonoBehaviour
         RectTransformUtility.ScreenPointToWorldPointInRectangle(handleRect, screenPoint, Camera.main, out worldPosition);
         
         return worldPosition;
+    }
+    public void UpdateScoreText() {
+        scoreText.UpdateScoreText();
     }
 }

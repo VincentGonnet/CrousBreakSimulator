@@ -49,6 +49,12 @@ public class GameManager : MonoBehaviour
     private void IncrementScore(int value)
     {
         score += value;
+        UIManager.instance.UpdateScoreText();
+    }
+
+    public int getScore()
+    {
+        return score;
     }
 
 
